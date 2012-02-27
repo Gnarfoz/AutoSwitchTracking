@@ -1,0 +1,11 @@
+## Interface: 40300
+## Title: Auto-switch Tracking
+## Notes: Automatically tracks different achievements based on your current zone.
+## Notes-deDE: Verfolgt automatisch unterschiedliche Erfolge, basierend auf dem aktuellen Gebiet.
+## Version: @project-version@.@project-abbreviated-hash@
+## Author: Gnarfoz
+## LoadOnDemand: 1
+## X-Email: gnarfoz@gmail.com
+## X-Category: Achievements
+
+ast.lua
