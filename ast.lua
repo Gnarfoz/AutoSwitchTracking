@@ -1,7 +1,18 @@
 local AST = CreateFrame("Frame")
 
-local function OnEvent(self, event, ...)
+local TrackingList = {
+	[301] = {583, 1153, 157},
+	[30] = {4017}
+}
+
+local function OnEvent(self, event, addon)
 	if event == "ZONE_CHANGED_NEW_AREA" or event == "ZONE_CHANGED" or event == "ZONE_CHANGED_INDOORS" then
+	local newzone = GetCurrentMapAreaID()
+
+	for zone,achievement in ipairs(TrackingList[newzone]) do
+	    print(achievement)
+	    AddTrackedAchievement(achievement)
+	end
 
 	elseif event == "ADDON_LOADED" and addon == "AutoSwitchTracking" then
 		AST:UnregisterEvent("ADDON_LOADED")
