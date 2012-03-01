@@ -5,6 +5,9 @@
 ## Version: @project-version@.@project-abbreviated-hash@
 ## Author: Gnarfoz
 ## LoadOnDemand: 1
+## LoadManagers: AddonLoader
+## X-LoadOn-Slash: /ast
+## X-LoadOn-Battleground: true
 ## X-Email: gnarfoz@gmail.com
 ## X-Category: Achievements
 
